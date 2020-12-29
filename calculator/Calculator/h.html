@@ -1,0 +1,52 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="c.css">
+
+</head>
+<body>
+<div id='calcBody'>
+    <div id="app">
+
+        <button id="ans">{{answer}}</button>
+        <br>
+        <button class="button" v-on:click="update_operater(8)">1/X</button>
+        <button class="button" v-on:click="update_operater(9)">X^2</button>
+        <button class="button" v-on:click="update_operater(10)">sqrt(X)</button>
+        <button class="button" v-on:click="update_operater(1)">%</button>
+        <br>
+        <button class="button" v-on:click="update_operater(7)" >C</button>
+        <button class="button" v-on:click="update_operater(6)">CE</button>
+        <button class="button" v-on:click="update_operand(-2)">DEL</button>
+        <button class="button" v-on:click="update_operater(2)">/</button>
+        <br>
+        <button class="button" v-on:click="update_operand(1)" >1</button>
+        <button class="button" v-on:click="update_operand(2)">2</button>
+        <button class="button" v-on:click="update_operand(3)">3</button>
+        <button class="button" v-on:click="update_operater(3)">+</button>
+        <br>
+        <button class="button" v-on:click=update_operand(4)>4</button>
+        <button class="button" v-on:click=update_operand(5)>5</button>
+        <button class="button" v-on:click=update_operand(6)>6</button>
+        <button class="button" v-on:click="update_operater(4)">-</button>
+        <br>
+        <button class="button" v-on:click=update_operand(7)>7</button>
+        <button class="button" v-on:click=update_operand(8)>8</button>
+        <button class="button" v-on:click="update_operand(9)">9</button>
+        <button class="button" v-on:click="update_operater(5)">x</button>
+        <br>
+        <button class="button zero" v-on:click="update_operand(-1)">+/-</button>
+        <button class="button zero" v-on:click="update_operand(0)">0</button>
+        <button class="button" v-on:click="update_operand(-3)">.</button>
+        <button class="button" v-on:click="calc">=</button>
+        <br>
+
+    </div>
+
+</div>
+
+<script src="j.js"></script>
+</body>
+</html>
